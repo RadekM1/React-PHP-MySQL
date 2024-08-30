@@ -104,10 +104,7 @@ const FilterForm2 = ({ data, handleFilterData, handleReset, handleSpz}) => {
               variant="outlined" 
               onChange= {handleSpzVal}
             />
-            
-            
           </div>
-
         </div>
       </div>
         <div className='row d-flex justify-content-center m-3'>

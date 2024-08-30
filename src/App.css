@@ -1,0 +1,13 @@
+.ramecek{
+    max-width: 700px;
+    border-radius: 15px;
+    border: color red;
+    display: flex;
+    text-align: center;
+    text-justify: center;
+}
+
+.sirkaMaxSedmSetPx{
+    max-width: 700px;
+
+}

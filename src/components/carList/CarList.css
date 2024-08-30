@@ -1,0 +1,26 @@
+.radek:nth-child(even) {
+    background-color: rgba(172, 121, 121, 0.432) ;
+}
+
+.radek:nth-child(odd) {
+    background-color: rgba(222, 225, 233, 0.471) ;
+}
+
+.radek {
+    border-radius: 5px;
+    margin: 2px;
+
+}
+
+
+.sirkaMaxSedmSetPx{
+    max-width: 700px !important;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1px !important;
+}
+
+.normalText{
+    font-weight: normal;
+}

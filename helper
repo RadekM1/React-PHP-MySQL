@@ -1,0 +1,55 @@
+const handleUpdate = (source) => {
+ let temp;
+ switch (source) {
+ case "add-car-form": {
+ temp = fillEmptyInfos(newCar);
+ if (confirmCar(temp)) {
+ insertCar(temp);
+ setNewCar({
+ brand: "",
+ model: "",
+ reg: "",
+ km: "",
+ year: "",
+ });
+ alert("Data byla úspěšně odeslána");
+ } else {
+ alert("Odeslání dat bylo zrušeno");
+ }
+ break;
+ }
+ case "change-car-form": {
+ temp = fillEmptyInfos(carToChange);
+ if (confirmCar(temp)) {
+ const index = cars.findIndex((car) => car.id === temp.id);
+ if (index !== -1) {
+ updateCar(temp);
+ setCarToChange({
+ id: 0,
+ brand: "",
+ model: "",
+ reg: "",
+ km: "",
+ year: "",
+ });
+ alert("Aktualizace dat úspěšná");
+ } else {
+ alert("Auto s daným id nebylo nalezeno");
+ setCarToChange({
+ id: 0,
+ brand: "",
+ model: "",
+ reg: "",
+ km: "",
+ year: "",
+ });
+ }
+ } else {
+ alert("Aktualizace neproběhla");
+ }
+ break;
+ }
+ default:
+ break;
+ }
+}; 
